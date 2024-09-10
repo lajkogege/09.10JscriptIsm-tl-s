@@ -7,6 +7,7 @@ export  default class Kartya{
         this.#obj=obj
         this.#szuloELem=szuloELem
         this.KutyaKiir()
+        this.KutyaKiir()
     }
     //tagfügvény az adattagokon dolgoznak
     KutyaKiir(){
