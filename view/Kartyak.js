@@ -6,6 +6,7 @@ export default class Kartyak{
     constructor(lista,tartalomElem){
         this.#lista=lista
         this.#tartalomElem=tartalomElem
+        this.#tartalomElem.empty()
         this.kutyakKiir()
     }
     kutyakKiir(){
