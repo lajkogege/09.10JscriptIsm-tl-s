@@ -31,10 +31,13 @@ export default class Kartya {
 
     //gombeseények kezelése
     esemenyKezelo() {
-        this.gombElem.on("click", function(){
-            console.log(this )
+        this.gombElem.on("click", () => {
+            console.log(this)
+            //létrehozunk egy saját eseményt
+            const e = new CustomEvent("kivalaszt", { detail: this.#obj })
+            window.dispatchEvent(e)
         }
-           
+
         )
     }
 }
